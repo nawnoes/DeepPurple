@@ -97,48 +97,6 @@ with tf.variable_scope("PN"):
 
     hypothesis = tf.matmul(FlatLayer, Flat_W) + Flat_B
 
-    # tf.summary.histogram("W1",W1)
-    # tf.summary.histogram("L1", L1)
-    #
-    # tf.summary.histogram("W2", W2)
-    # tf.summary.histogram("L2", L2)
-    #
-    # tf.summary.histogram("W3", W3)
-    # tf.summary.histogram("L3", L3)
-    #
-    # tf.summary.histogram("W4", W4)
-    # tf.summary.histogram("L4", L4)
-    #
-    # tf.summary.histogram("W5", W5)
-    # tf.summary.histogram("L5", L5)
-    #
-    # tf.summary.histogram("W6", W6)
-    # tf.summary.histogram("L6", L6)
-    #
-    # tf.summary.histogram("W7", W7)
-    # tf.summary.histogram("L7", L7)
-    #
-    # tf.summary.histogram("W8", W8)
-    # tf.summary.histogram("L8", L8)
-    #
-    # tf.summary.histogram("W9", W9)
-    # tf.summary.histogram("L9", L9)
-    #
-    # tf.summary.histogram("W10", W10)
-    # tf.summary.histogram("L10", L10)
-    #
-    # tf.summary.histogram("W11", W11)
-    # tf.summary.histogram("L11", L11)
-    #
-    # tf.summary.histogram("W12", W12)
-    # tf.summary.histogram("L12", L12)
-    #
-    # tf.summary.histogram("W13", W13)
-    # tf.summary.histogram("L13", L13)
-    #
-    # tf.summary.histogram("Flat_W", Flat_W)
-    # tf.summary.histogram("Flat_B", Flat_B)
-
     tf.summary.histogram("hypothesis", hypothesis)
 
     # define cost/Loss & optimizer
